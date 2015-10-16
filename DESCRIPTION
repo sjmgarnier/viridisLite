@@ -20,6 +20,6 @@ Description: Port of the new 'matplotlib' color maps ('viridis' - the default -,
 License: MIT + file LICENSE
 LazyData: TRUE
 Depends: R (>= 2.10)
-VignetteBuilder: knitr
-URL: https://github.com/sjmgarnier/viridis
-BugReports: https://github.com/sjmgarnier/viridis/issues
+Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1)
+URL: https://github.com/sjmgarnier/viridisLite
+BugReports: https://github.com/sjmgarnier/viridisLite/issues
