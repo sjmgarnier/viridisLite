@@ -16,7 +16,7 @@
 #' Matplotlib 'viridis' color map
 #'
 #' This function creates a vector of \code{n} equally spaced colors along the
-#' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
+#' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stefan van der Walt}
 #' and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
 #' designed in such a way that it will analytically be perfectly perceptually-uniform,
 #' both in regular form and also when converted to black-and-white. It is also
@@ -70,7 +70,7 @@ viridis <- function(n, alpha = 1, option = "D") {
                    B = "B", inferno = "B",
                    C = "C", plasma = "C",
                    D = "D", viridis = "D")
-  map <- viridis::viridis.map[viridis::viridis.map$opt == option, ]
+  map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
   loc <- seq(0, 1, length.out = 256)
   R <- stats::splinefun(x = loc, y = map$R)
   G <- stats::splinefun(x = loc, y = map$G)
@@ -95,7 +95,7 @@ viridisMap <- function(n = 256, alpha = 1, option = "D") {
                    B = "B", inferno = "B",
                    C = "C", plasma = "C",
                    D = "D", viridis = "D")
-  map <- viridis::viridis.map[viridis::viridis.map$opt == option, ]
+  map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
   loc <- seq(0, 1, length.out = 256)
   R <- stats::splinefun(x = loc, y = map$R)
   G <- stats::splinefun(x = loc, y = map$G)

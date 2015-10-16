@@ -42,7 +42,7 @@ channels of \code{n} equally spaced colors along the 'viridis' color map.
 }
 \description{
 This function creates a vector of \code{n} equally spaced colors along the
-Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
+Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stefan van der Walt}
 and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
 designed in such a way that it will analytically be perfectly perceptually-uniform,
 both in regular form and also when converted to black-and-white. It is also
