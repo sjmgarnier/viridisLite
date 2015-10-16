@@ -15,7 +15,8 @@ Description: Port of the new 'matplotlib' color maps ('viridis' - the default -,
     such a way that they will analytically be perfectly perceptually-uniform,
     both in regular form and also when converted to black-and-white. They are
     also designed to be perceived by readers with the most common form of color
-    blindness.
+    blindness. This is the 'lite' version of the more complete 'viridis' package
+    that can be found at <https://cran.r-project.org/package=viridis>.
 License: MIT + file LICENSE
 LazyData: TRUE
 Depends: R (>= 2.10)
