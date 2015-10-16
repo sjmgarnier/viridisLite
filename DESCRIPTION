@@ -1,0 +1,24 @@
+Package: viridisLite
+Type: Package
+Title: Default Color Maps from 'matplotlib' (lite version)
+Version: 0.1
+Date: 2015-10-15
+Authors@R: c(
+      person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
+      person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
+      person("Bob", "Rudis", email = "bob@rudis.net", role = c("ctb", "cph"))
+  )
+Maintainer: Simon Garnier <garnier@njit.edu>
+Description: Port of the new 'matplotlib' color maps ('viridis' - the default -,
+    'magma', 'plasma' and 'inferno') to 'R'. 'matplotlib' <http://matplotlib.org/>
+    is a popular plotting library for 'python'. These color maps are designed in
+    such a way that they will analytically be perfectly perceptually-uniform,
+    both in regular form and also when converted to black-and-white. They are
+    also designed to be perceived by readers with the most common form of color
+    blindness.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+URL: https://github.com/sjmgarnier/viridis
+BugReports: https://github.com/sjmgarnier/viridis/issues
