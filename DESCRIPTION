@@ -1,6 +1,6 @@
 Package: viridisLite
 Type: Package
-Title: Default Color Maps from 'matplotlib' (lite version)
+Title: Default Color Maps from 'matplotlib' (Lite Version)
 Version: 0.1
 Date: 2015-11-12
 Authors@R: c(
