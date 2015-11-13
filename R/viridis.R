@@ -62,8 +62,8 @@
 #'   col = viridis(n, option = "D"),
 #'   xlab = "viridis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 #' )
-#' @export
 #'
+#' @export
 viridis <- function(n, alpha = 1, option = "D") {
   option <- switch(option,
                    A = "A", magma = "A",
@@ -106,18 +106,21 @@ viridisMap <- function(n = 256, alpha = 1, option = "D") {
 }
 
 #' @rdname viridis
+#'
 #' @export
 magma = function(n, alpha = 1) {
   viridis(n, alpha, option = "magma")
 }
 
 #' @rdname viridis
+#'
 #' @export
 inferno = function(n, alpha = 1) {
   viridis(n, alpha, option = "inferno")
 }
 
 #' @rdname viridis
+#'
 #' @export
 plasma = function(n, alpha = 1) {
   viridis(n, alpha, option = "plasma")
