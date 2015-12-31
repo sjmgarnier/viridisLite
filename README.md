@@ -35,9 +35,18 @@ AND... they are now available for R!
 
 #### Installation
 
-`viridisLite 0.1` is only available on GitHub at the moment. To install this 
-development version, simply copy the following lines of code in your R terminal 
-and it should install everything you need to use `viridis` on your computer: 
+`viridisLite 0.1.1` is now [available on CRAN](https://cran.r-project.org/web/packages/viridisLite/).  
+You can install it using RStudio package manager or by typing the following line
+in your R terminal:
+
+```{r}
+install.packages("viridisLite")
+library(viridisLite)
+```
+
+If you prefer to install the development version from this GitHub repository,
+simply copy the following lines of code in your R terminal and it should install 
+everything you need to use `viridisLite` on your computer: 
 
 ```{r}
 if (!require("devtools")) install.packages("devtools")
@@ -45,7 +54,6 @@ devtools::install_github("sjmgarnier/viridisLite")
 
 library(viridisLite)
 ```
-
 ---
 
 #### Maintainer(s)
