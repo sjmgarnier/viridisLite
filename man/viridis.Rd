@@ -8,21 +8,25 @@
 \alias{viridisMap}
 \title{Matplotlib 'viridis' color map}
 \usage{
-viridis(n, alpha = 1, option = "D")
+viridis(n, alpha = 1, begin = 0, end = 1, option = "D")
 
-viridisMap(n = 256, alpha = 1, option = "D")
+viridisMap(n = 256, alpha = 1, begin = 0, end = 1, option = "D")
 
-magma(n, alpha = 1)
+magma(n, alpha = 1, begin = 0, end = 1)
 
-inferno(n, alpha = 1)
+inferno(n, alpha = 1, begin = 0, end = 1)
 
-plasma(n, alpha = 1)
+plasma(n, alpha = 1, begin = 0, end = 1)
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
 
 \item{alpha}{The alpha transparency, a number in [0,1], see argument alpha in
 \code{\link[grDevices]{hsv}}.}
+
+\item{begin}{The (corrected) hue in [0,1] at which the viridis colormap begins.}
+
+\item{end}{The (corrected) hue in [0,1] at which the viridis colormap ends.}
 
 \item{option}{A character string indicating the colormap option to use. Four
 options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
@@ -42,7 +46,7 @@ channels of \code{n} equally spaced colors along the 'viridis' color map.
 }
 \description{
 This function creates a vector of \code{n} equally spaced colors along the
-Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stefan van der Walt}
+Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
 and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
 designed in such a way that it will analytically be perfectly perceptually-uniform,
 both in regular form and also when converted to black-and-white. It is also
@@ -73,7 +77,6 @@ image(
   col = viridis(n, option = "D"),
   xlab = "viridis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 )
-
 }
 \author{
 Simon Garnier: \email{garnier@njit.edu}, \href{https://twitter.com/sjmgarnier}{@sjmgarnier}

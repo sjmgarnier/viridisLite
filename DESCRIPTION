@@ -1,8 +1,8 @@
 Package: viridisLite
 Type: Package
 Title: Default Color Maps from 'matplotlib' (Lite Version)
-Version: 0.1
-Date: 2015-11-12
+Version: 0.1.1
+Date: 2015-12-30
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
@@ -19,6 +19,7 @@ Description: Port of the new 'matplotlib' color maps ('viridis' - the default
     that can be found at <https://cran.r-project.org/package=viridis>.
 License: MIT + file LICENSE
 LazyData: TRUE
+Encoding:  UTF-8
 Depends:
     R (>= 2.10)
 Imports:
@@ -29,4 +30,4 @@ Suggests:
     ggplot2 (>= 1.0.1)
 URL: https://github.com/sjmgarnier/viridisLite
 BugReports: https://github.com/sjmgarnier/viridisLite/issues
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1

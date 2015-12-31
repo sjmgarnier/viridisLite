@@ -16,7 +16,7 @@
 #' Matplotlib 'viridis' color map
 #'
 #' This function creates a vector of \code{n} equally spaced colors along the
-#' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stefan van der Walt}
+#' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
 #' and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
 #' designed in such a way that it will analytically be perfectly perceptually-uniform,
 #' both in regular form and also when converted to black-and-white. It is also
@@ -26,6 +26,10 @@
 #'
 #' @param alpha	The alpha transparency, a number in [0,1], see argument alpha in
 #' \code{\link[grDevices]{hsv}}.
+#'
+#' @param begin The (corrected) hue in [0,1] at which the viridis colormap begins.
+#'
+#' @param end The (corrected) hue in [0,1] at which the viridis colormap ends.
 #'
 #' @param option A character string indicating the colormap option to use. Four
 #' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
@@ -62,9 +66,9 @@
 #'   col = viridis(n, option = "D"),
 #'   xlab = "viridis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 #' )
-#'
 #' @export
-viridis <- function(n, alpha = 1, option = "D") {
+#'
+viridis <- function(n, alpha = 1, begin = 0, end = 1, option = "D") {
   option <- switch(option,
                    A = "A", magma = "A",
                    B = "B", inferno = "B",
@@ -76,7 +80,7 @@ viridis <- function(n, alpha = 1, option = "D") {
   G <- stats::splinefun(x = loc, y = map$G)
   B <- stats::splinefun(x = loc, y = map$B)
 
-  loc <- seq(0, 1, length.out = n)
+  loc <- seq(begin, end, length.out = n)
   grDevices::rgb(R(loc), G(loc), B(loc), alpha = alpha)
 }
 
@@ -89,7 +93,7 @@ viridis <- function(n, alpha = 1, option = "D") {
 #' \code{n = 256} by default, which corresponds to the data from the original
 #' 'viridis' color map in Matplotlib.
 #'
-viridisMap <- function(n = 256, alpha = 1, option = "D") {
+viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, option = "D") {
   option <- switch(option,
                    A = "A", magma = "A",
                    B = "B", inferno = "B",
@@ -101,29 +105,26 @@ viridisMap <- function(n = 256, alpha = 1, option = "D") {
   G <- stats::splinefun(x = loc, y = map$G)
   B <- stats::splinefun(x = loc, y = map$B)
 
-  loc <- seq(0, 1, length.out = n)
+  loc <- seq(begin, end, length.out = n)
   data.frame(R = R(loc), G = G(loc), B = B(loc), alpha = alpha)
 }
 
 #' @rdname viridis
-#'
 #' @export
-magma = function(n, alpha = 1) {
-  viridis(n, alpha, option = "magma")
+magma = function(n, alpha = 1, begin = 0, end = 1) {
+  viridis(n, alpha, begin, end, option = "magma")
 }
 
 #' @rdname viridis
-#'
 #' @export
-inferno = function(n, alpha = 1) {
-  viridis(n, alpha, option = "inferno")
+inferno = function(n, alpha = 1, begin = 0, end = 1) {
+  viridis(n, alpha, begin, end, option = "inferno")
 }
 
 #' @rdname viridis
-#'
 #' @export
-plasma = function(n, alpha = 1) {
-  viridis(n, alpha, option = "plasma")
+plasma = function(n, alpha = 1, begin = 0, end = 1) {
+  viridis(n, alpha, begin, end, option = "plasma")
 }
 
 
