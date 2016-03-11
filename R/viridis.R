@@ -109,11 +109,17 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, option = "D") {
 #' 'viridis' color map in Matplotlib.
 #'
 viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, option = "D") {
+  if (begin < 0 | begin > 1 | end < 0 | end > 1) {
+    stop("begin and end must be in [0,1]")
+  }
+
   option <- switch(option,
                    A = "A", magma = "A",
                    B = "B", inferno = "B",
                    C = "C", plasma = "C",
-                   D = "D", viridis = "D")
+                   D = "D", viridis = "D",
+                   {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
+
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
   map_cols <- grDevices::rgb(map$R, map$G, map$B)
   fn_cols <- grDevices::colorRamp(map_cols, space = "Lab", interpolate = "spline")
