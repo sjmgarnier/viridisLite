@@ -19,4 +19,3 @@ A dataset containing the original RGB values of the default Matplotlib color
  map ('viridis'). Source: \url{https://github.com/BIDS/colormap/blob/master/option_d.py}.
 }
 \keyword{datasets}
-

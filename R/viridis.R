@@ -31,6 +31,9 @@
 #'
 #' @param end The (corrected) hue in [0,1] at which the viridis colormap ends.
 #'
+#' @param direction Sets the order of colors in the scale. If 1, the default, colors
+#' are ordered from darkest to lightest. If -1, the order of colors is reversed.
+#'
 #' @param option A character string indicating the colormap option to use. Four
 #' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
 #' and "viridis" (or "D", the default option).
@@ -80,9 +83,19 @@
 #' )
 #' @export
 #'
-viridis <- function(n, alpha = 1, begin = 0, end = 1, option = "D") {
+viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") {
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
+  }
+
+  if (abs(direction) != 1) {
+    stop("direction must be 1 or -1")
+  }
+
+  if (direction == -1) {
+    tmp <- begin
+    begin <- end
+    end <- tmp
   }
 
   option <- switch(option,
@@ -108,9 +121,19 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, option = "D") {
 #' \code{n = 256} by default, which corresponds to the data from the original
 #' 'viridis' color map in Matplotlib.
 #'
-viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, option = "D") {
+viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") {
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
+  }
+
+  if (abs(direction) != 1) {
+    stop("direction must be 1 or -1")
+  }
+
+  if (direction == -1) {
+    tmp <- begin
+    begin <- end
+    end <- tmp
   }
 
   option <- switch(option,
@@ -129,20 +152,20 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, option = "D") {
 
 #' @rdname viridis
 #' @export
-magma = function(n, alpha = 1, begin = 0, end = 1) {
-  viridis(n, alpha, begin, end, option = "magma")
+magma = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "magma")
 }
 
 #' @rdname viridis
 #' @export
-inferno = function(n, alpha = 1, begin = 0, end = 1) {
-  viridis(n, alpha, begin, end, option = "inferno")
+inferno = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "inferno")
 }
 
 #' @rdname viridis
 #' @export
-plasma = function(n, alpha = 1, begin = 0, end = 1) {
-  viridis(n, alpha, begin, end, option = "plasma")
+plasma = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "plasma")
 }
 
 
