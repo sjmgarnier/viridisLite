@@ -35,7 +35,7 @@ AND... they are now available for R!
 
 #### Installation
 
-`viridisLite 0.1.2` is now [available on CRAN](https://cran.r-project.org/web/packages/viridisLite/).  
+`viridisLite 0.1.3` is now [available on CRAN](https://cran.r-project.org/package=viridisLite).  
 You can install it using RStudio package manager or by typing the following line
 in your R terminal:
 
