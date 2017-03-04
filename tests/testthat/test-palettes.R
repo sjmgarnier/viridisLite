@@ -36,6 +36,14 @@ test_that("palette generation is accurate", {
   expect_equal(viridis(2, alpha = 0, begin = 1, end = 0, direction = -1, option = "A"),
                c("#00000400", "#FCFDBF00"))
 
+  # bad inputs
+  expect_warning(viridis(1, option = "E"))
+  expect_error(viridis(1, direction=100))
+  expect_error(viridis(1, begin = -1))
+  expect_error(viridis(1, begin = 100))
+  expect_error(viridis(1, end = -1))
+  expect_error(viridis(1, end = 100))
+
   # we've already proven these work with ^^ but we'll add a few more values to
   # generate and get better code coverage this way.
 

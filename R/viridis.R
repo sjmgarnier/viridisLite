@@ -121,7 +121,7 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
 #' \code{n = 256} by default, which corresponds to the data from the original
 #' 'viridis' color map in Matplotlib.
 #'
-viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") {
+viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") { # nocov start
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
   }
@@ -148,7 +148,7 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
   fn_cols <- grDevices::colorRamp(map_cols, space = "Lab", interpolate = "spline")
   cols <- fn_cols(seq(begin, end, length.out = n)) / 255
   data.frame(R = cols[, 1], G = cols[, 2], B = cols[, 3], alpha = alpha)
-}
+} # nocov end
 
 #' @rdname viridis
 #' @export
