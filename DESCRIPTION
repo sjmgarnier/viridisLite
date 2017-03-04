@@ -6,7 +6,7 @@ Date: 2017-03-03
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
-      person("Bob", "Rudis", email = "bob@rudis.net", role = c("ctb", "cph"))
+      person("Bob", "Rudis", email = "bob@rud.is", role = c("ctb", "cph"))
   )
 Maintainer: Simon Garnier <garnier@njit.edu>
 Description: Port of the new 'matplotlib' color maps ('viridis' - the default
@@ -27,7 +27,9 @@ Imports:
     grDevices
 Suggests:
     hexbin (>= 1.27.0),
-    ggplot2 (>= 1.0.1)
+    ggplot2 (>= 1.0.1),
+    testthat,
+    covr
 URL: https://github.com/sjmgarnier/viridisLite
 BugReports: https://github.com/sjmgarnier/viridisLite/issues
 RoxygenNote: 6.0.1

@@ -4,3 +4,5 @@ img
 data-raw
 cran_graphs.R
 Dockerfile
+^\.travis\.yml$
+^codecov\.yml$

@@ -2,6 +2,8 @@
 
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/viridisLite)](http://cran.rstudio.com/web/packages/viridisLite)
+[![Travis-CI Build Status](https://travis-ci.org/hrbrmstr/viridisLite.svg?branch=master)](https://travis-ci.org/NA/viridisLite)
+[![Coverage Status](https://img.shields.io/codecov/c/github/hrbrmstr/viridisLite/master.svg)](https://codecov.io/github/hrbrmstr/viridisLite?branch=master)
 
 [Matplotlib](http://matplotlib.org/) recently [introduced new color maps]
 (http://matplotlib.org/style_changes.html) for their graphs. They are called
