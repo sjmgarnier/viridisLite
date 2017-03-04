@@ -74,6 +74,24 @@ be passed as a function name.
 Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 devices: see \code{\link[grDevices]{rgb}}.
 }
+\examples{
+library(ggplot2)
+library(hexbin)
+
+dat <- data.frame(x = rnorm(10000), y = rnorm(10000))
+
+ggplot(dat, aes(x = x, y = y)) +
+  geom_hex() + coord_fixed() +
+  scale_fill_gradientn(colours = viridis(256, option = "D"))
+
+# using code from RColorBrewer to demo the palette
+n = 200
+image(
+  1:n, 1, as.matrix(1:n),
+  col = viridis(n, option = "D"),
+  xlab = "viridis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
+)
+}
 \author{
 Simon Garnier: \email{garnier@njit.edu}, \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
 }
