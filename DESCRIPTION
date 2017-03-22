@@ -2,7 +2,6 @@ Package: viridisLite
 Type: Package
 Title: Default Color Maps from 'matplotlib' (Lite Version)
 Version: 0.2.0
-Date: 2017-03-03
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
@@ -22,9 +21,6 @@ LazyData: TRUE
 Encoding: UTF-8
 Depends:
     R (>= 2.10)
-Imports:
-    stats,
-    grDevices
 Suggests:
     hexbin (>= 1.27.0),
     ggplot2 (>= 1.0.1)
