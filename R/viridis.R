@@ -152,19 +152,19 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
 
 #' @rdname viridis
 #' @export
-magma = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+magma <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "magma")
 }
 
 #' @rdname viridis
 #' @export
-inferno = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+inferno <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "inferno")
 }
 
 #' @rdname viridis
 #' @export
-plasma = function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+plasma <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "plasma")
 }
 
