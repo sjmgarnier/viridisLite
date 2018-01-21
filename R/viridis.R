@@ -1,19 +1,23 @@
-#' Original 'viridis' color map
+#' Original 'viridis'and 'cividis' color map
 #'
 #' A dataset containing the original RGB values of the default Matplotlib color
-#'  map ('viridis'). Source: \url{https://github.com/BIDS/colormap/blob/master/option_d.py}.
+#'  map ('viridis') and the color vision deficiencies optimized color map
+#'  'cividis'.
+#'  Sources: \url{https://github.com/BIDS/colormap/blob/master/option_d.py} and
+#'  \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt}.
 #'
-#' @format A data frame with 1024 rows and 4 variables:
+#' @format A data frame with 1280 rows and 4 variables:
 #' \itemize{
 #'   \item R: Red value
 #'   \item G: Green value
 #'   \item B: Blue value
-#'   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma; D: viridis)
+#'   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
+#'   D: viridis; E: cividis)
 #' }
 "viridis.map"
 
 
-#' Matplotlib 'viridis' color map
+#' Matplotlib 'viridis' and 'cividis' color map
 #'
 #' This function creates a vector of \code{n} equally spaced colors along the
 #' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
@@ -21,6 +25,14 @@
 #' designed in such a way that it will analytically be perfectly perceptually-uniform,
 #' both in regular form and also when converted to black-and-white. It is also
 #' designed to be perceived by readers with the most common form of color blindness.
+#'
+#' A corrected version of 'viridis', 'cividis', was developed by
+#' \href{https://github.com/jamienunez}{Jamie R. Nuez} and
+#' \href{https://github.com/smcolby}{Sean M. Colby}. It is optimal for viewing by
+#' those with color vision deficiency. 'cividis' is designed to be perfectly
+#' perceptually-uniform, both in regular form and also when converted to
+#' black-and-white, and can be perceived by readers with all forms of color
+#' blindness.
 #'
 #' @param n The number of colors (\eqn{\ge 1}) to be in the palette.
 #'
@@ -36,7 +48,7 @@
 #'
 #' @param option A character string indicating the colormap option to use. Four
 #' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-#' and "viridis" (or "D", the default option).
+#' "viridis" (or "D", the default option) and "cividis" (or "E").
 #'
 #' @return \code{viridis} returns a character vector, \code{cv}, of color hex
 #' codes. This can be used either to create a user-defined color palette for
@@ -57,9 +69,9 @@
 #'   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
 #'   }
 #'
-#' \code{magma()}, \code{plasma()}, and \code{inferno()} are convenience
-#' functions for the other colormap options, which are useful the scale must
-#' be passed as a function name.
+#' \code{magma()}, \code{plasma()}, \code{inferno()} and \code{cividis()} are
+#' convenience functions for the other colormap options, which are useful the
+#' scale must be passed as a function name.
 #'
 #' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 #' devices: see \code{\link[grDevices]{rgb}}.
@@ -98,11 +110,12 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
     end <- tmp
   }
 
-  option <- switch(option,
+  option <- switch(EXPR = option,
                    A = "A", magma = "A",
                    B = "B", inferno = "B",
                    C = "C", plasma = "C",
                    D = "D", viridis = "D",
+                   E = "E", cividis = "E",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -136,11 +149,12 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
     end <- tmp
   }
 
-  option <- switch(option,
+  option <- switch(EXPR = option,
                    A = "A", magma = "A",
                    B = "B", inferno = "B",
                    C = "C", plasma = "C",
                    D = "D", viridis = "D",
+                   E = "E", cividis = "E",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -168,4 +182,9 @@ plasma <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "plasma")
 }
 
+#' @rdname viridis
+#' @export
+cividis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "cividis")
+}
 

@@ -6,7 +6,8 @@
 \alias{magma}
 \alias{inferno}
 \alias{plasma}
-\title{Matplotlib 'viridis' color map}
+\alias{cividis}
+\title{Matplotlib 'viridis' and 'cividis' color map}
 \usage{
 viridis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
 
@@ -18,6 +19,8 @@ magma(n, alpha = 1, begin = 0, end = 1, direction = 1)
 inferno(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
 plasma(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+cividis(n, alpha = 1, begin = 0, end = 1, direction = 1)
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
@@ -34,7 +37,7 @@ are ordered from darkest to lightest. If -1, the order of colors is reversed.}
 
 \item{option}{A character string indicating the colormap option to use. Four
 options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-and "viridis" (or "D", the default option).}
+"viridis" (or "D", the default option) and "cividis" (or "E").}
 }
 \value{
 \code{viridis} returns a character vector, \code{cv}, of color hex
@@ -57,6 +60,16 @@ both in regular form and also when converted to black-and-white. It is also
 designed to be perceived by readers with the most common form of color blindness.
 }
 \details{
+A corrected version of 'viridis', 'cividis', was developed by
+\href{https://github.com/jamienunez}{Jamie R. Nuez} and
+\href{https://github.com/smcolby}{Sean M. Colby}. It is optimal for viewing by
+those with color vision deficiency. 'cividis' is designed to be perfectly
+perceptually-uniform, both in regular form and also when converted to
+black-and-white, and can be perceived by readers with all forms of color
+blindness.
+
+
+
 \if{html}{Here are the color scales:
 
   \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:90\%;"}\out{</div>}
@@ -67,9 +80,9 @@ designed to be perceived by readers with the most common form of color blindness
   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
   }
 
-\code{magma()}, \code{plasma()}, and \code{inferno()} are convenience
-functions for the other colormap options, which are useful the scale must
-be passed as a function name.
+\code{magma()}, \code{plasma()}, \code{inferno()} and \code{cividis()} are
+convenience functions for the other colormap options, which are useful the
+scale must be passed as a function name.
 
 Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 devices: see \code{\link[grDevices]{rgb}}.
