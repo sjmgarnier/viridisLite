@@ -1,7 +1,7 @@
 Package: viridisLite
 Type: Package
 Title: Default Color Maps from 'matplotlib' (Lite Version)
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
