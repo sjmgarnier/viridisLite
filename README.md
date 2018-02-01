@@ -3,8 +3,8 @@
 [![cran version](http://www.r-pkg.org/badges/version/viridisLite)](https://cran.r-project.org/package=viridisLite)
 [![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
 [![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/viridisLite?color=yellowgreen)](https://github.com/metacran/cranlogs.app)
-[![Travis-CI Build Status](https://travis-ci.org/hrbrmstr/viridisLite.svg?branch=master)](https://travis-ci.org/hrbrmstr/viridisLite)
-[![Coverage Status](https://img.shields.io/codecov/c/github/hrbrmstr/viridisLite/master.svg)](https://codecov.io/github/hrbrmstr/viridisLite?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/sjmgarnier/viridisLite.svg?branch=master)](https://travis-ci.org/sjmgarnier/viridisLite)
+[![Coverage Status](https://img.shields.io/codecov/c/github/sjmgarnier/viridisLite/master.svg)](https://codecov.io/github/sjmgarnier/viridisLite?branch=master)
 
 
 [Matplotlib](http://matplotlib.org/) recently [introduced new color maps]
