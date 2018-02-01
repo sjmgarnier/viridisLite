@@ -5,7 +5,7 @@ Version: 0.3.0
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
-      person("Bob", "Rudis", email = "bob@rud.is", role = c("ctb", "cph"),
+      person("Bob", "Rudis", email = "bob@rud.is", role = c("ctb", "cph")),
       person("Marco", "Sciaini", email = "sciaini.marco@gmail.com", role = c("ctb", "cph"))
   )
 Maintainer: Simon Garnier <garnier@njit.edu>
