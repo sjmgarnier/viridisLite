@@ -61,7 +61,7 @@ designed to be perceived by readers with the most common form of color blindness
 }
 \details{
 A corrected version of 'viridis', 'cividis', was developed by
-\href{https://github.com/jamienunez}{Jamie R. Nuez} and
+\href{https://github.com/jamienunez}{Jamie R. Nuñez} and
 \href{https://github.com/smcolby}{Sean M. Colby}. It is optimal for viewing by
 those with color vision deficiency. 'cividis' is designed to be perfectly
 perceptually-uniform, both in regular form and also when converted to
