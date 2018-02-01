@@ -6,3 +6,4 @@ cran_graphs.R
 Dockerfile
 ^\.travis\.yml$
 ^codecov\.yml$
+README.md
