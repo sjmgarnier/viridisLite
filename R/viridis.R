@@ -46,7 +46,7 @@
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are ordered from darkest to lightest. If -1, the order of colors is reversed.
 #'
-#' @param option A character string indicating the colormap option to use. Four
+#' @param option A character string indicating the colormap option to use. Five
 #' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
 #' "viridis" (or "D", the default option) and "cividis" (or "E").
 #'
