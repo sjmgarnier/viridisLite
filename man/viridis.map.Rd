@@ -3,23 +3,24 @@
 \docType{data}
 \name{viridis.map}
 \alias{viridis.map}
-\title{Original 'viridis'and 'cividis' color map}
-\format{A data frame with 1280 rows and 4 variables:
+\title{Original 'viridis', 'cividis', 'rocket' and 'mako' color map}
+\format{A data frame with 1792 rows and 4 variables:
 \itemize{
   \item R: Red value
   \item G: Green value
   \item B: Blue value
   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
-  D: viridis; E: cividis)
+  D: viridis; E: cividis; F: rocket, G: mako)
 }}
 \usage{
 viridis.map
 }
 \description{
 A dataset containing the original RGB values of the default Matplotlib color
- map ('viridis') and the color vision deficiencies optimized color map
- 'cividis'.
- Sources: \url{https://github.com/BIDS/colormap/blob/master/option_d.py} and
- \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt}.
+ map ('viridis'), the color vision deficiencies optimized color map
+ 'cividis', and the 'rocket' and 'mako' color maps from Seaborn.
+ Sources: \url{https://github.com/BIDS/colormap/blob/master/option_d.py},
+ \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt} and
+ \url{https://github.com/mwaskom/seaborn/blob/master/seaborn/cm.py}.
 }
 \keyword{datasets}

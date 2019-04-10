@@ -1,4 +1,4 @@
-#' Original 'viridis'and 'cividis' color map
+#' Original 'viridis', 'cividis', 'rocket' and ''mako' color maps
 #'
 #' A dataset containing the original RGB values of the default Matplotlib color
 #'  map ('viridis') and the color vision deficiencies optimized color map
@@ -6,7 +6,7 @@
 #'  Sources: \url{https://github.com/BIDS/colormap/blob/master/option_d.py} and
 #'  \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt}.
 #'
-#' @format A data frame with 1280 rows and 4 variables:
+#' @format A data frame with 1792 rows and 4 variables:
 #' \itemize{
 #'   \item R: Red value
 #'   \item G: Green value
@@ -17,7 +17,7 @@
 "viridis.map"
 
 
-#' Matplotlib 'viridis' and 'cividis' color map
+#' Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps
 #'
 #' This function creates a vector of \code{n} equally spaced colors along the
 #' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
@@ -46,9 +46,10 @@
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are ordered from darkest to lightest. If -1, the order of colors is reversed.
 #'
-#' @param option A character string indicating the colormap option to use. Five
+#' @param option A character string indicating the colormap option to use. Seven
 #' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-#' "viridis" (or "D", the default option) and "cividis" (or "E").
+#' "viridis" (or "D", the default option), "cividis" (or "E"), "rocket" (or "F") and
+#' "mako" (or "G").
 #'
 #' @return \code{viridis} returns a character vector, \code{cv}, of color hex
 #' codes. This can be used either to create a user-defined color palette for
@@ -116,6 +117,8 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
                    C = "C", plasma = "C",
                    D = "D", viridis = "D",
                    E = "E", cividis = "E",
+                   F = "F", rocket = "F",
+                   G = "G", mako = "G",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -188,3 +191,14 @@ cividis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "cividis")
 }
 
+#' @rdname viridis
+#' @export
+rocket <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "rocket")
+}
+
+#' @rdname viridis
+#' @export
+mako <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "mako")
+}

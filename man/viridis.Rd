@@ -35,7 +35,7 @@ cividis(n, alpha = 1, begin = 0, end = 1, direction = 1)
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are ordered from darkest to lightest. If -1, the order of colors is reversed.}
 
-\item{option}{A character string indicating the colormap option to use. Five
+\item{option}{A character string indicating the colormap option to use. Seven
 options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
 "viridis" (or "D", the default option) and "cividis" (or "E").}
 }
