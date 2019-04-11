@@ -33,4 +33,4 @@ Suggests:
     covr
 URL: https://github.com/sjmgarnier/viridisLite
 BugReports: https://github.com/sjmgarnier/viridisLite/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
