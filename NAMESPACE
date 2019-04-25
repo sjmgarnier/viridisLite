@@ -3,5 +3,7 @@
 export(cividis)
 export(inferno)
 export(magma)
+export(mako)
 export(plasma)
+export(rocket)
 export(viridis)

@@ -7,9 +7,12 @@
 \alias{inferno}
 \alias{plasma}
 \alias{cividis}
-\title{Matplotlib 'viridis' and 'cividis' color map}
+\alias{rocket}
+\alias{mako}
+\title{Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps}
 \usage{
-viridis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
+viridis(n, alpha = 1, begin = 0, end = 1, direction = 1,
+  option = "D")
 
 viridisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
   option = "D")
@@ -21,6 +24,10 @@ inferno(n, alpha = 1, begin = 0, end = 1, direction = 1)
 plasma(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
 cividis(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+rocket(n, alpha = 1, begin = 0, end = 1, direction = 1)
+
+mako(n, alpha = 1, begin = 0, end = 1, direction = 1)
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
@@ -35,9 +42,10 @@ cividis(n, alpha = 1, begin = 0, end = 1, direction = 1)
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are ordered from darkest to lightest. If -1, the order of colors is reversed.}
 
-\item{option}{A character string indicating the colormap option to use. Five
+\item{option}{A character string indicating the colormap option to use. Seven
 options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-"viridis" (or "D", the default option) and "cividis" (or "E").}
+"viridis" (or "D", the default option), "cividis" (or "E"), "rocket" (or "F") and
+"mako" (or "G").}
 }
 \value{
 \code{viridis} returns a character vector, \code{cv}, of color hex
@@ -80,9 +88,9 @@ blindness.
   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
   }
 
-\code{magma()}, \code{plasma()}, \code{inferno()} and \code{cividis()} are
-convenience functions for the other colormap options, which are useful the
-scale must be passed as a function name.
+\code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()}, \code{rocket()}
+and \code{mako()} are convenience functions for the other colormap options, which
+are useful the scale must be passed as a function name.
 
 Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 devices: see \code{\link[grDevices]{rgb}}.
