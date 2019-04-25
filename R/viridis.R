@@ -1,4 +1,4 @@
-#' Original 'viridis', 'cividis', 'rocket' and ''mako' color maps
+#' Original 'viridis', 'cividis', 'rocket' and 'mako' color maps
 #'
 #' A dataset containing the original RGB values of the default Matplotlib color
 #'  map ('viridis'), the color vision deficiencies optimized color map
