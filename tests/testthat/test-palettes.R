@@ -72,6 +72,7 @@ test_that("palette generation is accurate", {
   expect_equal(viridis(0), character(0))
   expect_equal(mako(0), character(0))
   expect_equal(viridis(0, begin = 0.9, end = 0.2), character(0))
+  expect_equal(nrow(viridisMap(0)), 0)
 
   # we've already proven these work with ^^ but we'll add a few more values to
   # generate and get better code coverage this way.

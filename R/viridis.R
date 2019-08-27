@@ -141,7 +141,7 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
 #' channels of \code{n} equally spaced colors along the 'viridis' color map.
 #' \code{n = 256} by default, which corresponds to the data from the original
 #' 'viridis' color map in Matplotlib.
-#'
+#' @export
 viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") { # nocov start
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
@@ -149,6 +149,10 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
 
   if (abs(direction) != 1) {
     stop("direction must be 1 or -1")
+  }
+
+  if (n == 0) {
+    return(data.frame(R = double(0), G = double(0), B = double(0), alpha = double(0)))
   }
 
   if (direction == -1) {
