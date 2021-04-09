@@ -124,6 +124,7 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
                    E = "E", cividis = "E",
                    F = "F", rocket = "F",
                    G = "G", mako = "G",
+                   H = "H", turbo = "H",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -169,6 +170,7 @@ viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
                    E = "E", cividis = "E",
                    E = "F", rocket = "F",
                    E = "G", mako = "G",
+                   H = "H", turbo = "H",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'viridis'.")); "D"})
 
   map <- viridisLite::viridis.map[viridisLite::viridis.map$opt == option, ]
@@ -212,4 +214,10 @@ rocket <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
 #' @export
 mako <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
   viridis(n, alpha, begin, end, direction, option = "mako")
+}
+
+#' @rdname viridis
+#' @export
+turbo <- function(n, alpha = 1, begin = 0, end = 1, direction = 1) {
+  viridis(n, alpha, begin, end, direction, option = "turbo")
 }

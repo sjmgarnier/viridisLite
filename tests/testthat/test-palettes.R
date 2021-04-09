@@ -2,7 +2,7 @@ context("palette generation")
 test_that("palette generation is accurate", {
 
   # data is intact
-  expect_equal(dim(viridis.map), c(1792, 4))
+  expect_equal(dim(viridis.map), c(2048, 4))
 
   # options work as expected
   expect_equal(viridis(1, option = "D"), "#440154FF")
@@ -60,8 +60,16 @@ test_that("palette generation is accurate", {
   expect_equal(viridis(2, alpha = 0, begin = 1, end = 0, direction = -1, option = "G"),
               c("#0B040500", "#DEF5E500"))
 
+  # options work as expected
+  expect_equal(viridis(1, option = "H"), "#30123BFF")
+  expect_equal(viridis(1, alpha = 0, option = "H"), "#30123B00")
+  expect_equal(viridis(1, begin = 1, end = 0, option = "H"), "#7A0403FF")
+  expect_equal(viridis(1, alpha = 0, begin = 1, end = 0, option = "H"), "#7A040300")
+  expect_equal(viridis(2, alpha = 0, begin = 1, end = 0, direction = -1, option = "H"),
+               c("#30123B00", "#7A040300"))
+
   # bad inputs
-  expect_warning(viridis(1, option = "H"))
+  expect_warning(viridis(1, option = "I"))
   expect_error(viridis(1, direction=100))
   expect_error(viridis(1, begin = -1))
   expect_error(viridis(1, begin = 100))

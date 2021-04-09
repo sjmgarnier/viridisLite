@@ -12,7 +12,9 @@ optionF <- read.csv("data-raw/optionF.csv")
 optionF$opt <- "F"
 optionG <- read.csv("data-raw/optionG.csv")
 optionG$opt <- "G"
+optionH <- read.csv("data-raw/optionH.csv")
+optionH$opt <- "H"
 
-viridis.map <- rbind(optionA, optionB, optionC, optionD, optionE, optionF, optionG)
+viridis.map <- rbind(optionA, optionB, optionC, optionD, optionE, optionF, optionG, optionH)
 
-devtools::use_data(viridis.map, overwrite = TRUE)
+usethis::use_data(viridis.map, overwrite = TRUE)
