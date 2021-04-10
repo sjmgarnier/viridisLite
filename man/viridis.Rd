@@ -10,13 +10,11 @@
 \alias{rocket}
 \alias{mako}
 \alias{turbo}
-\title{Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps}
+\title{Viridis Color Palettes}
 \usage{
-viridis(n, alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+viridis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
 
-viridisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+viridisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D")
 
 magma(n, alpha = 1, begin = 0, end = 1, direction = 1)
 
@@ -38,52 +36,46 @@ turbo(n, alpha = 1, begin = 0, end = 1, direction = 1)
 \item{alpha}{The alpha transparency, a number in [0,1], see argument alpha in
 \code{\link[grDevices]{hsv}}.}
 
-\item{begin}{The (corrected) hue in [0,1] at which the viridis colormap begins.}
+\item{begin}{The (corrected) hue in [0,1] at which the color map begins.}
 
-\item{end}{The (corrected) hue in [0,1] at which the viridis colormap ends.}
+\item{end}{The (corrected) hue in [0,1] at which the color map ends.}
 
-\item{direction}{Sets the order of colors in the scale. If 1, the default, colors
-are ordered from darkest to lightest. If -1, the order of colors is reversed.}
+\item{direction}{Sets the order of colors in the scale. If 1, the default,
+colors are ordered from darkest to lightest. If -1, the order of colors is
+reversed.}
 
-\item{option}{A character string indicating the colormap option to use. Seven
-options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-"viridis" (or "D", the default option), "cividis" (or "E"), "rocket" (or "F") and
-"mako" (or "G").}
+\item{option}{A character string indicating the color map option to use.
+Eight options are available:
+\itemize{
+ \item "magma" (or "A")
+ \item "inferno" (or "B")
+ \item "plasma" (or "C")
+ \item "viridis" (or "D")
+ \item "cividis" (or "E")
+ \item "rocket" (or "F")
+ \item "mako" (or "G")
+ \item "turbo" (or "H")
+}}
 }
 \value{
 \code{viridis} returns a character vector, \code{cv}, of color hex
-codes. This can be used either to create a user-defined color palette for
-subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
-graphics functions or in \code{par}.
+ codes. This can be used either to create a user-defined color palette for
+ subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
+ graphics functions or in \code{par}.
 
 \code{viridisMap} returns a \code{n} lines data frame containing the
-red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
-channels of \code{n} equally spaced colors along the 'viridis' color map.
-\code{n = 256} by default, which corresponds to the data from the original
-'viridis' color map in Matplotlib.
+ red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
+ channels of \code{n} equally spaced colors along the selected color map.
+ \code{n = 256} by default.
 }
 \description{
-This function creates a vector of \code{n} equally spaced colors along the
-Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
-and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
-designed in such a way that it will analytically be perfectly perceptually-uniform,
-both in regular form and also when converted to black-and-white. It is also
-designed to be perceived by readers with the most common form of color blindness.
+This function creates a vector of \code{n} equally spaced colors
+ along the selected color map.
 }
 \details{
-A corrected version of 'viridis', 'cividis', was developed by
-\href{https://github.com/jamienunez}{Jamie R. Nuñez} and
-\href{https://github.com/smcolby}{Sean M. Colby}. It is optimal for viewing by
-those with color vision deficiency. 'cividis' is designed to be perfectly
-perceptually-uniform, both in regular form and also when converted to
-black-and-white, and can be perceived by readers with all forms of color
-blindness.
-
-
-
 \if{html}{Here are the color scales:
 
-  \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:90\%;"}\out{</div>}
+  \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:75\%;"}\out{</div>}
 
   }
 \if{latex}{Here are the color scales:
@@ -91,12 +83,13 @@ blindness.
   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
   }
 
-\code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()}, \code{rocket()}
-and \code{mako()} are convenience functions for the other colormap options, which
-are useful the scale must be passed as a function name.
+\code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()},
+ \code{rocket()}, \code{mako()}, and \code{turbo()} are convenience functions
+ for the other color map options, which are useful when the scale must be
+ passed as a function name.
 
 Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-devices: see \code{\link[grDevices]{rgb}}.
+ devices: see \code{\link[grDevices]{rgb}}.
 }
 \examples{
 library(ggplot2)
@@ -117,5 +110,5 @@ image(
 )
 }
 \author{
-Simon Garnier: \email{garnier@njit.edu}, \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
+Simon Garnier: \email{garnier@njit.edu}
 }

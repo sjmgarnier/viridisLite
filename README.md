@@ -1,47 +1,39 @@
-# viridisLite
+# viridisLite - Colorblind-Friendly Color Maps for R <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
 [![cran version](http://www.r-pkg.org/badges/version/viridisLite)](https://cran.r-project.org/package=viridisLite)
 [![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
 [![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/viridisLite?color=yellowgreen)](https://github.com/metacran/cranlogs.app)
-[![Travis-CI Build Status](https://travis-ci.org/sjmgarnier/viridisLite.svg?branch=master)](https://travis-ci.org/sjmgarnier/viridisLite)
+[![R-CMD-check](https://github.com/sjmgarnier/viridisLite/workflows/R-CMD-check/badge.svg)](https://github.com/sjmgarnier/viridisLite/actions)
 [![Coverage Status](https://img.shields.io/codecov/c/github/sjmgarnier/viridisLite/master.svg)](https://codecov.io/github/sjmgarnier/viridisLite?branch=master)
 
+## Description
 
-[Matplotlib](http://matplotlib.org/) recently [introduced new color maps]
-(http://matplotlib.org/style_changes.html) for their graphs. They are called
-`viridis`, `magma`, `inferno`, and `plasma`. `viridis` was made the new default 
-color map of Matplotlib. 
+`viridisLite`, and its companion package [`viridis`](https://cran.r-project.org/package=viridis) 
+provide a series of color maps that are designed to improve graph readability 
+for readers with common forms of color blindness and/or color vision deficiency. 
+The color maps are also perceptually-uniform, both in regular form and also when 
+converted to black-and-white for printing. 
 
-These four color maps are designed in such a way that they will analytically be 
-perfectly perceptually-uniform, both in regular form and also when converted to 
-black-and-white. They are also designed to be perceived by readers with the most 
-common form of color blindness. 
-
-AND... they are pretty!
-
-AND... they are now available for R! 
-
-> **NOTE**: `viridisLite` is the 'lite' version of the more complete 
-> [`viridis` package](https://github.com/sjmgarnier/viridis). `viridisLite` contains
-> only the core functions of `viridis` that generate the color vectors for each 
-> of the aforementioned color maps. It does not have any of the other features of
-> the full `viridis` package (e.g. scale functions for `ggplot2`). This was 
-> requested by users of `viridis` who did not want to have to import the dependencies 
-> of `viridis` but still wanted to be able to use the color maps it provides. 
+`viridisLite` provides the base functions for generating the color maps in base 
+`R`. The package is meant to be as lightweight and dependency-free as possible 
+for maximum compatibility with all the `R` ecosystem. [`viridis`](https://cran.r-project.org/package=viridis)
+provides additional functionalities, in particular bindings for `ggplot2`.
 
 ---
 
-#### Look how pretty they are! 
+## The color maps
 
-![Sample image](https://raw.githubusercontent.com/sjmgarnier/viridis/master/img/sample2.png)
+The latest version of `viridisLite` comes with 8 different color maps, and they 
+are all very pretty!!!
+
+![Sample image](man/figures/maps.png)
 
 ---
 
-#### Installation
+## Installation
 
-`viridisLite 0.1.3` is now [available on CRAN](https://cran.r-project.org/package=viridisLite).  
-You can install it using RStudio package manager or by typing the following line
-in your R terminal:
+You can install `viridisLite` from `CRAN` by typing the following line in your R 
+console:
 
 ```{r}
 install.packages("viridisLite")
@@ -53,28 +45,35 @@ simply copy the following lines of code in your R terminal and it should install
 everything you need to use `viridisLite` on your computer: 
 
 ```{r}
-if (!require("devtools")) install.packages("devtools")
-devtools::install_github("sjmgarnier/viridisLite")
+if (!require("devtools")) 
+  install.packages("devtools")
 
+devtools::install_github("sjmgarnier/viridisLite")
 library(viridisLite)
 ```
----
-
-#### Maintainer(s)
-
-Simon Garnier - [@sjmgarnier](https://twitter.com/sjmgarnier) - <garnier@njit.edu>
 
 ---
 
-#### References
+## References
 
-The color maps in the `viridis` package were created by Stéfan van der Walt ([@stefanv](https://github.com/stefanv))
-and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). 
+The color maps `viridis`, `magma`, `inferno`, and `plasma` were created by 
+Stéfan van der Walt ([@stefanv](https://github.com/stefanv)) and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). If you want to know more about the 
+science behind the creation of these color maps, you can watch this 
+[presentation of `viridis`](https://youtu.be/xAoljeRJ3lU) by their authors at 
+[SciPy 2015](http://scipy2015.scipy.org/). 
 
-If you want to know more about the science behind the creation of these color maps, 
-you can watch this [presentation of `viridis`](https://youtu.be/xAoljeRJ3lU) by 
-their authors at [SciPy 2015](http://scipy2015.scipy.org/). 
+The color map `cividis` is a corrected version of 'viridis', developed by 
+Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow, and originally 
+ported to `R` by Marco Sciaini ([@msciain](https://github.com/marcosci)). More 
+info about `cividis` can be found in 
+[this paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239).
 
+The color maps `mako` and `rocket` were originally created for the `Seaborn` 
+statistical data visualization package for Python. More info about `mako` and 
+`rocket` can be found on the 
+[`Seaborn` website](https://seaborn.pydata.org/tutorial/color_palettes.html).
 
-
-
+The color map `turbo` was developed by Anton Mikhailov to address the 
+shortcomings of the Jet rainbow color map such as false detail, banding and 
+color blindness ambiguity. More infor about `turbo` can be found
+[here](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).

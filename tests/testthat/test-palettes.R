@@ -70,7 +70,7 @@ test_that("palette generation is accurate", {
 
   # bad inputs
   expect_warning(viridis(1, option = "I"))
-  expect_error(viridis(1, direction=100))
+  expect_error(viridis(1, direction = 100))
   expect_error(viridis(1, begin = -1))
   expect_error(viridis(1, begin = 100))
   expect_error(viridis(1, end = -1))
@@ -91,5 +91,5 @@ test_that("palette generation is accurate", {
   expect_equal(cividis(3), c("#00204DFF", "#7C7B78FF", "#FFEA46FF"))
   expect_equal(rocket(3), c("#03051AFF", "#CB1B4FFF", "#FAEBDDFF"))
   expect_equal(mako(3), c("#0B0405FF", "#357BA2FF", "#DEF5E5FF"))
-
+  expect_equal(turbo(3), c("#30123BFF", "#A2FC3CFF", "#7A0403FF"))
 })
