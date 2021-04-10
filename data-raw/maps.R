@@ -65,6 +65,6 @@ optH <- base_graph +
 
 png("man/figures/maps.png", width = 1500, height = 1000, res = 150)
 (optA + optB + optC) /
-  (optD + optE + optF) /
-  (optG + optH)
+  (optD + optE) /
+  (optF + optG + optH)
 dev.off()
