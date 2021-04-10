@@ -1,68 +1,86 @@
-#' Original 'viridis', 'cividis', 'rocket' and 'mako' color maps
+#' @title Color Map Data
 #'
-#' A dataset containing the original RGB values of the default Matplotlib color
-#'  map ('viridis'), the color vision deficiencies optimized color map
-#'  'cividis' and the Seaborn color maps 'rocket' and 'mako'.
-#'  Sources: \url{https://github.com/BIDS/colormap/blob/master/option_d.py} and
-#'  \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt}.
+#' @description A data set containing the RGB values of the color maps included
+#'  in the package. These are:
+#'  \itemize{
+#'   \item 'magma', 'inferno', 'plasma', and 'viridis' as defined in Matplotlib
+#'    for Python. These color maps are designed in such a way that they will
+#'    analytically be perfectly perceptually-uniform, both in regular form and
+#'    also when converted to black-and-white. They are also designed to be
+#'    perceived by readers with the most common form of color blindness. They
+#'    were created by \href{https://github.com/stefanv}{Stéfan van der Walt}
+#'    and \href{https://github.com/njsmith}{Nathaniel Smith};
+#'   \item 'cividis', a corrected version of 'viridis', 'cividis', developed by
+#'    Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow, and
+#'    originally ported to R by Marco Sciaini. It is designed to be perceived by
+#'    readers with all forms of color blindness;
+#'   \item 'rocket' and 'mako' as defined in Seaborn for Python;
+#'   \item 'turbo', an improved Jet rainbow color map for reducing false detail,
+#'    banding and color blindness ambiguity.
+#'  }
 #'
-#' @format A data frame with 1792 rows and 4 variables:
+#' @references
 #' \itemize{
-#'   \item R: Red value
-#'   \item G: Green value
-#'   \item B: Blue value
+#'    \item 'magma', 'inferno', 'plasma', and 'viridis': https://bids.github.io/colormap/
+#'   \item 'cividis': https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239
+#'   \item 'rocket' and 'mako': https://seaborn.pydata.org/index.html
+#'   \item 'turbo': https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
+#' }
+#'
+#' @format A data frame with 2048 rows and 4 variables:
+#' \itemize{
+#'   \item R: Red value;
+#'   \item G: Green value;
+#'   \item B: Blue value;
 #'   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
-#'   D: viridis; E: cividis; F: rocket; G: mako)
+#'    D: viridis; E: cividis; F: rocket; G: mako; H: turbo).
 #' }
 "viridis.map"
 
 
-#' Matplotlib 'viridis', 'cividis', 'rocket' and 'mako' color maps
+#' @title Viridis Color Palettes
 #'
-#' This function creates a vector of \code{n} equally spaced colors along the
-#' Matplolib 'viridis' color map created by \href{https://github.com/stefanv}{Stéfan van der Walt}
-#' and \href{https://github.com/njsmith}{Nathaniel Smith}. This color map is
-#' designed in such a way that it will analytically be perfectly perceptually-uniform,
-#' both in regular form and also when converted to black-and-white. It is also
-#' designed to be perceived by readers with the most common form of color blindness.
-#'
-#' A corrected version of 'viridis', 'cividis', was developed by
-#' \href{https://github.com/jamienunez}{Jamie R. Nuñez} and
-#' \href{https://github.com/smcolby}{Sean M. Colby}. It is optimal for viewing by
-#' those with color vision deficiency. 'cividis' is designed to be perfectly
-#' perceptually-uniform, both in regular form and also when converted to
-#' black-and-white, and can be perceived by readers with all forms of color
-#' blindness.
+#' @description This function creates a vector of \code{n} equally spaced colors
+#'  along the selected color map.
 #'
 #' @param n The number of colors (\eqn{\ge 1}) to be in the palette.
 #'
 #' @param alpha	The alpha transparency, a number in [0,1], see argument alpha in
 #' \code{\link[grDevices]{hsv}}.
 #'
-#' @param begin The (corrected) hue in [0,1] at which the viridis colormap begins.
+#' @param begin The (corrected) hue in [0,1] at which the color map begins.
 #'
-#' @param end The (corrected) hue in [0,1] at which the viridis colormap ends.
+#' @param end The (corrected) hue in [0,1] at which the color map ends.
 #'
-#' @param direction Sets the order of colors in the scale. If 1, the default, colors
-#' are ordered from darkest to lightest. If -1, the order of colors is reversed.
+#' @param direction Sets the order of colors in the scale. If 1, the default,
+#'  colors are ordered from darkest to lightest. If -1, the order of colors is
+#'  reversed.
 #'
-#' @param option A character string indicating the colormap option to use. Seven
-#' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-#' "viridis" (or "D", the default option), "cividis" (or "E"), "rocket" (or "F") and
-#' "mako" (or "G").
+#' @param option A character string indicating the color map option to use.
+#'  Eight options are available:
+#'  \itemize{
+#'   \item "magma" (or "A")
+#'   \item "inferno" (or "B")
+#'   \item "plasma" (or "C")
+#'   \item "viridis" (or "D")
+#'   \item "cividis" (or "E")
+#'   \item "rocket" (or "F")
+#'   \item "mako" (or "G")
+#'   \item "turbo" (or "H")
+#'  }
 #'
 #' @return \code{viridis} returns a character vector, \code{cv}, of color hex
-#' codes. This can be used either to create a user-defined color palette for
-#' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
-#' graphics functions or in \code{par}.
+#'  codes. This can be used either to create a user-defined color palette for
+#'  subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
+#'  graphics functions or in \code{par}.
 #'
-#' @author Simon Garnier: \email{garnier@@njit.edu}, \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
+#' @author Simon Garnier: \email{garnier@@njit.edu}
 #'
 #' @details
 #'
 #' \if{html}{Here are the color scales:
 #'
-#'   \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:90\%;"}\out{</div>}
+#'   \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:75\%;"}\out{</div>}
 #'
 #'   }
 #' \if{latex}{Here are the color scales:
@@ -70,12 +88,13 @@
 #'   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
 #'   }
 #'
-#' \code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()}, \code{rocket()}
-#' and \code{mako()} are convenience functions for the other colormap options, which
-#' are useful the scale must be passed as a function name.
+#' \code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()},
+#'  \code{rocket()}, \code{mako()}, and \code{turbo()} are convenience functions
+#'  for the other color map options, which are useful when the scale must be
+#'  passed as a function name.
 #'
 #' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-#' devices: see \code{\link[grDevices]{rgb}}.
+#'  devices: see \code{\link[grDevices]{rgb}}.
 #'
 #' @examples
 #' library(ggplot2)
@@ -95,7 +114,6 @@
 #'   xlab = "viridis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 #' )
 #' @export
-#'
 viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") {
 
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
@@ -138,12 +156,13 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
 #' @rdname viridis
 #'
 #' @return  \code{viridisMap} returns a \code{n} lines data frame containing the
-#' red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
-#' channels of \code{n} equally spaced colors along the 'viridis' color map.
-#' \code{n = 256} by default, which corresponds to the data from the original
-#' 'viridis' color map in Matplotlib.
+#'  red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
+#'  channels of \code{n} equally spaced colors along the selected color map.
+#'  \code{n = 256} by default.
+#'
 #' @export
-viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") { # nocov start
+viridisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
+                       option = "D") { # nocov start
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
   }

@@ -13,3 +13,4 @@ vignettes/*.pdf
 .RData
 inst/doc
 cran_graphs.R
+docs
