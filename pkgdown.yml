@@ -2,8 +2,8 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-04-11T17:47Z
+last_built: 2021-04-11T17:53Z
 urls:
-  reference: http://sjmgarnier.github.io/viridisLite/reference
-  article: http://sjmgarnier.github.io/viridisLite/articles
+  reference: https://sjmgarnier.github.io/viridisLite/reference
+  article: https://sjmgarnier.github.io/viridisLite/articles
 
