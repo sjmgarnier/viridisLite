@@ -110,5 +110,5 @@ image(
 )
 }
 \author{
-Simon Garnier: \email{garnier@njit.edu}
+Simon Garnier: \email{garnier@njit.edu} / \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
 }
