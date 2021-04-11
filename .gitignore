@@ -7,4 +7,4 @@ vignettes/*.pdf
 .Rproj.user
 .RData
 cran_graphs.R
-revdep
+^revdep$
