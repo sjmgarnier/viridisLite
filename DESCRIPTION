@@ -19,7 +19,6 @@ Description: Color maps designed to improve graph readability for readers with
     continuous color and fill scales and can be found at 
     <https://cran.r-project.org/package=viridis>.
 License: MIT + file LICENSE
-LazyData: TRUE
 Encoding: UTF-8
 Depends:
     R (>= 2.10)
@@ -28,6 +27,6 @@ Suggests:
     ggplot2 (>= 1.0.1),
     testthat,
     covr
-URL: http://sjmgarnier.github.io/viridisLite, https://github.com/sjmgarnier/viridisLite
+URL: https://sjmgarnier.github.io/viridisLite, https://github.com/sjmgarnier/viridisLite
 BugReports: https://github.com/sjmgarnier/viridisLite/issues
 RoxygenNote: 7.1.1
