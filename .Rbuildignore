@@ -12,4 +12,4 @@ README.md
 ^pkgdown$
 cran-comments.md
 ^CRAN-RELEASE$
-revdep
+^revdep$
