@@ -1,4 +1,4 @@
-url: http://sjmgarnier.github.io/viridisLite
+url: https://sjmgarnier.github.io/viridisLite
 
 template:
   params:
@@ -6,7 +6,7 @@ template:
 
 authors:
   Simon Garnier:
-    href: http://www.theswarmlab.com
+    href: https://www.theswarmlab.com
 
 development:
   mode: unreleased
