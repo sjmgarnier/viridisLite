@@ -7,6 +7,7 @@ Authors@R: c(
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
       person("Bob", "Rudis", email = "bob@rud.is", role = c("ctb", "cph")),
       person("Marco", "Sciaini", email = "sciaini.marco@gmail.com", role = c("ctb", "cph")),
+      person("Antônio Pedro", "Camargo", role = c("ctb", "cph")),
       person("Cédric", "Scherer", email = "scherer@izw-berlin.de", role = c("ctb", "cph"))
   )
 Maintainer: Simon Garnier <garnier@njit.edu>
@@ -14,7 +15,8 @@ Description: Color maps designed to improve graph readability for readers with
     common forms of color blindness and/or color vision deficiency. The color 
     maps are also perceptually-uniform, both in regular form and also when 
     converted to black-and-white for printing. This is the 'lite' version of the 
-    'viridis' package that also contains ggplot2 bindings and can be found at 
+    'viridis' package that also contains 'ggplot2' bindings for discrete and 
+    continuous color and fill scales and can be found at 
     <https://cran.r-project.org/package=viridis>.
 License: MIT + file LICENSE
 LazyData: TRUE

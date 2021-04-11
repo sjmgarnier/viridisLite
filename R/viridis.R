@@ -35,6 +35,8 @@
 #'   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
 #'    D: viridis; E: cividis; F: rocket; G: mako; H: turbo).
 #' }
+#'
+#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
 "viridis.map"
 
 
@@ -74,7 +76,7 @@
 #'  subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #'  graphics functions or in \code{par}.
 #'
-#' @author Simon Garnier: \email{garnier@@njit.edu}
+#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
 #'
 #' @details
 #'

@@ -45,4 +45,7 @@ A data set containing the RGB values of the color maps included
   \item 'turbo': https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
 }
 }
+\author{
+Simon Garnier: \email{garnier@njit.edu} / \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
+}
 \keyword{datasets}
