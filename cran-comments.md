@@ -1,8 +1,8 @@
 ## Test environments
 
-* local OS X 11.2.2, R 4.0.4
-* local Windows 10, R 4.0.4
-* local Ubuntu 20.04, R 4.0.4
+* local OS X 11.2.2, R 4.0.5
+* local Windows 10, R 4.0.5
+* local Ubuntu 20.04, R 4.0.5
 * Github Actions "windows-latest (release)"
 * Github Actions "macOS-latest (release)"
 * Github Actions "ubuntu-20.04-latest (release)"
@@ -18,7 +18,7 @@ There were no ERRORs or WARNINGs.
 
 ## Downstream dependencies
 
-
+revdepcheck::revdep_check() returned no problem with downstream dependencies. 
 
 ## CRAN team comments
 
