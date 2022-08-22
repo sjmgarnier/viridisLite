@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sjmgarnier.github.io/viridisLite/404.html</loc>
+  </url>
+  <url>
+    <loc>https://sjmgarnier.github.io/viridisLite/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://sjmgarnier.github.io/viridisLite/authors.html</loc>
+  </url>
+  <url>
     <loc>https://sjmgarnier.github.io/viridisLite/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sjmgarnier.github.io/viridisLite/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sjmgarnier.github.io/viridisLite/reference/index.html</loc>
   </url>
   <url>
     <loc>https://sjmgarnier.github.io/viridisLite/reference/viridis.html</loc>
