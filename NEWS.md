@@ -1,3 +1,15 @@
+# viridisLite 0.4.1
+
+## New features
+
+* N/A.
+
+## Minor improvements and fixes
+
+* Fix CRAN check warnings with R-devel. 
+
+---
+
 # viridisLite 0.4.0
 
 ## New features
