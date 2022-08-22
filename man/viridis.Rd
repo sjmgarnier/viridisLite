@@ -47,14 +47,14 @@ reversed.}
 \item{option}{A character string indicating the color map option to use.
 Eight options are available:
 \itemize{
- \item "magma" (or "A")
- \item "inferno" (or "B")
- \item "plasma" (or "C")
- \item "viridis" (or "D")
- \item "cividis" (or "E")
- \item "rocket" (or "F")
- \item "mako" (or "G")
- \item "turbo" (or "H")
+ \item{}{"magma" (or "A")}
+ \item{}{"inferno" (or "B")}
+ \item{}{"plasma" (or "C")}
+ \item{}{"viridis" (or "D")}
+ \item{}{"cividis" (or "E")}
+ \item{}{"rocket" (or "F")}
+ \item{}{"mako" (or "G")}
+ \item{}{"turbo" (or "H")}
 }}
 }
 \value{
@@ -74,14 +74,11 @@ This function creates a vector of \code{n} equally spaced colors
 }
 \details{
 \if{html}{Here are the color scales:
-
-  \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:75\%;"}\out{</div>}
-
-  }
+  \figure{viridis-scales.png}{options: style="display:block;margin-left:auto;margin-right:auto;width:750px;max-width:75\%;"}
+}
 \if{latex}{Here are the color scales:
-
   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
-  }
+}
 
 \code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()},
  \code{rocket()}, \code{mako()}, and \code{turbo()} are convenience functions

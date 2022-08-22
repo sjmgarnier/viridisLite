@@ -3,37 +3,37 @@
 #' @description A data set containing the RGB values of the color maps included
 #'  in the package. These are:
 #'  \itemize{
-#'   \item 'magma', 'inferno', 'plasma', and 'viridis' as defined in Matplotlib
+#'   \item{}{'magma', 'inferno', 'plasma', and 'viridis' as defined in Matplotlib
 #'    for Python. These color maps are designed in such a way that they will
 #'    analytically be perfectly perceptually-uniform, both in regular form and
 #'    also when converted to black-and-white. They are also designed to be
 #'    perceived by readers with the most common form of color blindness. They
 #'    were created by \href{https://github.com/stefanv}{Stéfan van der Walt}
-#'    and \href{https://github.com/njsmith}{Nathaniel Smith};
-#'   \item 'cividis', a corrected version of 'viridis', 'cividis', developed by
+#'    and \href{https://github.com/njsmith}{Nathaniel Smith};}
+#'   \item{}{'cividis', a corrected version of 'viridis', 'cividis', developed by
 #'    Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow, and
 #'    originally ported to R by Marco Sciaini. It is designed to be perceived by
-#'    readers with all forms of color blindness;
-#'   \item 'rocket' and 'mako' as defined in Seaborn for Python;
-#'   \item 'turbo', an improved Jet rainbow color map for reducing false detail,
-#'    banding and color blindness ambiguity.
+#'    readers with all forms of color blindness;}
+#'   \item{}{'rocket' and 'mako' as defined in Seaborn for Python;}
+#'   \item{}{'turbo', an improved Jet rainbow color map for reducing false detail,
+#'    banding and color blindness ambiguity.}
 #'  }
 #'
 #' @references
 #' \itemize{
-#'    \item 'magma', 'inferno', 'plasma', and 'viridis': https://bids.github.io/colormap/
-#'   \item 'cividis': https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239
-#'   \item 'rocket' and 'mako': https://seaborn.pydata.org/index.html
-#'   \item 'turbo': https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
+#'   \item{}{'magma', 'inferno', 'plasma', and 'viridis': https://bids.github.io/colormap/}
+#'   \item{}{'cividis': https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239}
+#'   \item{}{'rocket' and 'mako': https://seaborn.pydata.org/index.html}
+#'   \item{}{'turbo': https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html}
 #' }
 #'
 #' @format A data frame with 2048 rows and 4 variables:
 #' \itemize{
-#'   \item R: Red value;
-#'   \item G: Green value;
-#'   \item B: Blue value;
-#'   \item opt: The colormap "option" (A: magma; B: inferno; C: plasma;
-#'    D: viridis; E: cividis; F: rocket; G: mako; H: turbo).
+#'   \item{R: }{Red value;}
+#'   \item{G: }{Green value;}
+#'   \item{B: }{Blue value;}
+#'   \item{opt: }{The colormap "option" (A: magma; B: inferno; C: plasma;
+#'    D: viridis; E: cividis; F: rocket; G: mako; H: turbo).}
 #' }
 #'
 #' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
@@ -61,14 +61,14 @@
 #' @param option A character string indicating the color map option to use.
 #'  Eight options are available:
 #'  \itemize{
-#'   \item "magma" (or "A")
-#'   \item "inferno" (or "B")
-#'   \item "plasma" (or "C")
-#'   \item "viridis" (or "D")
-#'   \item "cividis" (or "E")
-#'   \item "rocket" (or "F")
-#'   \item "mako" (or "G")
-#'   \item "turbo" (or "H")
+#'   \item{}{"magma" (or "A")}
+#'   \item{}{"inferno" (or "B")}
+#'   \item{}{"plasma" (or "C")}
+#'   \item{}{"viridis" (or "D")}
+#'   \item{}{"cividis" (or "E")}
+#'   \item{}{"rocket" (or "F")}
+#'   \item{}{"mako" (or "G")}
+#'   \item{}{"turbo" (or "H")}
 #'  }
 #'
 #' @return \code{viridis} returns a character vector, \code{cv}, of color hex
@@ -79,16 +79,12 @@
 #' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
 #'
 #' @details
-#'
 #' \if{html}{Here are the color scales:
-#'
-#'   \out{<div style="text-align: center">}\figure{viridis-scales.png}{options: style="width:750px;max-width:75\%;"}\out{</div>}
-#'
-#'   }
+#'   \figure{viridis-scales.png}{options: style="display:block;margin-left:auto;margin-right:auto;width:750px;max-width:75\%;"}
+#' }
 #' \if{latex}{Here are the color scales:
-#'
 #'   \out{\begin{center}}\figure{viridis-scales.png}\out{\end{center}}
-#'   }
+#' }
 #'
 #' \code{magma()}, \code{plasma()}, \code{inferno()}, \code{cividis()},
 #'  \code{rocket()}, \code{mako()}, and \code{turbo()} are convenience functions
@@ -157,7 +153,7 @@ viridis <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D
 
 #' @rdname viridis
 #'
-#' @return  \code{viridisMap} returns a \code{n} lines data frame containing the
+#' @return \code{viridisMap} returns a \code{n} lines data frame containing the
 #'  red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
 #'  channels of \code{n} equally spaced colors along the selected color map.
 #'  \code{n = 256} by default.
