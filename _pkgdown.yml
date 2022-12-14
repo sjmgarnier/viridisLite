@@ -1,7 +1,7 @@
 url: https://sjmgarnier.github.io/viridisLite
 
 template:
-  params:
+    bootstrap: 5
     bootswatch: simplex
 
 authors:
