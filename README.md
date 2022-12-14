@@ -1,11 +1,13 @@
 # viridisLite - Colorblind-Friendly Color Maps for R <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
+<!-- badges: start -->
+[![DOI](https://zenodo.org/badge/44360137.svg)](https://zenodo.org/badge/latestdoi/44360137)
+[![R-CMD-check](https://github.com/sjmgarnier/viridisLite/workflows/R-CMD-check/badge.svg)](https://github.com/sjmgarnier/viridisLite/actions)
+[![Codecov test coverage](https://codecov.io/gh/sjmgarnier/viridisLite/branch/master/graph/badge.svg)](https://app.codecov.io/gh/sjmgarnier/viridisLite?branch=master)
 [![cran version](http://www.r-pkg.org/badges/version/viridisLite)](https://cran.r-project.org/package=viridisLite)
 [![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
 [![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/viridisLite?color=yellowgreen)](https://github.com/metacran/cranlogs.app)
-[![R-CMD-check](https://github.com/sjmgarnier/viridisLite/workflows/R-CMD-check/badge.svg)](https://github.com/sjmgarnier/viridisLite/actions)
-[![Codecov test coverage](https://codecov.io/gh/sjmgarnier/viridisLite/branch/master/graph/badge.svg)](https://app.codecov.io/gh/sjmgarnier/viridisLite?branch=master)
-[![DOI](https://zenodo.org/badge/44360137.svg)](https://zenodo.org/badge/latestdoi/44360137)
+<!-- badges: end -->
 
 ## Description
 
