@@ -4,7 +4,7 @@
 [![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
 [![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/viridisLite?color=yellowgreen)](https://github.com/metacran/cranlogs.app)
 [![R-CMD-check](https://github.com/sjmgarnier/viridisLite/workflows/R-CMD-check/badge.svg)](https://github.com/sjmgarnier/viridisLite/actions)
-[![Coverage Status](https://img.shields.io/codecov/c/github/sjmgarnier/viridisLite/master.svg)](https://codecov.io/github/sjmgarnier/viridisLite?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/sjmgarnier/viridisLite/branch/master/graph/badge.svg)](https://app.codecov.io/gh/sjmgarnier/viridisLite?branch=master)
 [![DOI](https://zenodo.org/badge/44360137.svg)](https://zenodo.org/badge/latestdoi/44360137)
 
 ## Description
