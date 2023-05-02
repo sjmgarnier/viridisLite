@@ -2,7 +2,7 @@ Package: viridisLite
 Type: Package
 Title: Colorblind-Friendly Color Maps (Lite Version)
 Version: 0.4.2
-Date: 2022-12-14
+Date: 2023-05-02
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
       person("Noam", "Ross", email = "noam.ross@gmail.com", role = c("ctb", "cph")),
