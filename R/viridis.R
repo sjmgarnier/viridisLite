@@ -1,6 +1,5 @@
 #' @title Color Map Data
 #'
-#' @encoding UTF-8
 #' @description A data set containing the RGB values of the color maps included
 #'  in the package. These are:
 #'  \itemize{
