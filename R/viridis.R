@@ -20,11 +20,11 @@
 #'  }
 #'
 #' @references
-#' \itemize{
-#'   \item 'magma', 'inferno', 'plasma', and 'viridis': https://bids.github.io/colormap/
-#'   \item 'cividis': https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239
-#'   \item 'rocket' and 'mako': https://seaborn.pydata.org/index.html
-#'   \item 'turbo': https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
+#' \describe{
+#'   \item{\code{magma}, \code{inferno}, \code{plasma}, \code{viridis}}{\url{https://bids.github.io/colormap/}}
+#'   \item{\code{cividis}}{\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239}}
+#'   \item{\code{rocket}, \code{mako}}{\url{https://seaborn.pydata.org/index.html}}
+#'   \item{\code{turbo}}{\url{https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html}}
 #' }
 #'
 #' @format A data frame with 2048 rows and 4 variables:
