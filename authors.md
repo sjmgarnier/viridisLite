@@ -20,13 +20,13 @@ Source:
 [`inst/CITATION`](https://github.com/sjmgarnier/viridisLite/blob/master/inst/CITATION)
 
 Simon Garnier, Noam Ross, Robert Rudis, Antônio P. Camargo, Marco
-Sciaini, and Cédric Scherer (2023). viridis(Lite) - Colorblind-Friendly
+Sciaini, and Cédric Scherer (2026). viridis(Lite) - Colorblind-Friendly
 Color Maps for R. viridisLite package version 0.4.3.
 
     @Manual{,
       title = {{viridis(Lite)} - Colorblind-Friendly Color Maps for R},
       author = {{Garnier} and {Simon} and {Ross} and {Noam} and {Rudis} and {Robert} and {Camargo} and Antônio Pedro and {Sciaini} and {Marco} and {Scherer} and {Cédric}},
-      year = {2023},
+      year = {2026},
       note = {viridisLite package version 0.4.3},
       url = {https://sjmgarnier.github.io/viridis/},
       doi = {10.5281/zenodo.4678326},

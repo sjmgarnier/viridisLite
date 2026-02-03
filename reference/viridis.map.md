@@ -50,16 +50,21 @@ A data frame with 2048 rows and 4 variables:
 
 ## References
 
-- 'magma', 'inferno', 'plasma', and 'viridis':
-  https://bids.github.io/colormap/
+- `magma`, `inferno`, `plasma`, `viridis`:
 
-- 'cividis':
-  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239
+  <https://bids.github.io/colormap/>
 
-- 'rocket' and 'mako': https://seaborn.pydata.org/index.html
+- `cividis`:
 
-- 'turbo':
-  https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
+  <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239>
+
+- `rocket`, `mako`:
+
+  <https://seaborn.pydata.org/index.html>
+
+- `turbo`:
+
+  <https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html>
 
 ## Author
 
