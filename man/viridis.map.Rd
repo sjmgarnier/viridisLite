@@ -46,6 +46,6 @@ A data set containing the RGB values of the color maps included
 }
 }
 \author{
-Simon Garnier: \email{garnier@njit.edu} / \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
+Simon Garnier: \email{garnier@njit.edu} / \href{https://bsky.app/profile/lostintheswarm.bsky.social}{@lostintheswarm}
 }
 \keyword{datasets}
