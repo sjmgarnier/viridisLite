@@ -1,7 +1,7 @@
 Package: viridisLite
 Type: Package
 Title: Colorblind-Friendly Color Maps (Lite Version)
-Version: 0.4.2
+Version: 0.4.3
 Date: 2023-05-02
 Authors@R: c(
       person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre")),
@@ -30,4 +30,4 @@ Suggests:
     covr
 URL: https://sjmgarnier.github.io/viridisLite/, https://github.com/sjmgarnier/viridisLite/
 BugReports: https://github.com/sjmgarnier/viridisLite/issues/
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.3
