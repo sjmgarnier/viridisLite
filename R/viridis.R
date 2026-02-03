@@ -36,7 +36,7 @@
 #'    D: viridis; E: cividis; F: rocket; G: mako; H: turbo).}
 #' }
 #'
-#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
+#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://bsky.app/profile/lostintheswarm.bsky.social}{@@lostintheswarm}
 "viridis.map"
 
 
@@ -76,7 +76,7 @@
 #'  subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #'  graphics functions or in \code{par}.
 #'
-#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://twitter.com/sjmgarnier}{@@sjmgarnier}
+#' @author Simon Garnier: \email{garnier@@njit.edu} / \href{https://bsky.app/profile/lostintheswarm.bsky.social}{@@lostintheswarm}
 #'
 #' @details
 #' \if{html}{Here are the color scales:

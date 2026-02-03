@@ -107,5 +107,5 @@ image(
 )
 }
 \author{
-Simon Garnier: \email{garnier@njit.edu} / \href{https://twitter.com/sjmgarnier}{@sjmgarnier}
+Simon Garnier: \email{garnier@njit.edu} / \href{https://bsky.app/profile/lostintheswarm.bsky.social}{@lostintheswarm}
 }
