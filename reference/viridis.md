@@ -96,7 +96,7 @@ devices: see [`rgb`](https://rdrr.io/r/grDevices/rgb.html).
 ## Author
 
 Simon Garnier: <garnier@njit.edu> /
-[@sjmgarnier](https://twitter.com/sjmgarnier)
+[@lostintheswarm](https://bsky.app/profile/lostintheswarm.bsky.social)
 
 ## Examples
 

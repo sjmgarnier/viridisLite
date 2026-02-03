@@ -1,5 +1,17 @@
 # Changelog
 
+## viridisLite 0.4.3
+
+### New features
+
+- N/A.
+
+### Minor improvements and fixes
+
+- Fix new check issues.
+
+------------------------------------------------------------------------
+
 ## viridisLite 0.4.2
 
 CRAN release: 2023-05-02
